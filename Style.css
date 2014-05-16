@@ -1,0 +1,262 @@
+﻿@font-face {
+    font-family: portal;
+    src: url('portal.ttf') format('truetype');
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Asap:400,700,700italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400,700,300);
+
+@font-face {
+    font-family: portal;
+    src: local("portal"), url("portal.ttf");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+    color: #555;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    background-image: url(img/bg3.jpg);
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+h1 {
+    font-family: portal, sans-serif;
+    font-size: 3.2rem;
+    /*-webkit-text-shadow: 1px 1px 0px #999, 2px 2px 1px #777, 3px 3px 1px #777;
+    text-shadow: 1px 1px 0px #999, 2px 2px 1px #777, 3px 3px 1px #777; */
+    color: #444;
+    padding: 1em 0em;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 0.5em;
+    padding-left: 0em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+
+#next {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: 10%;
+    height: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+#prev {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+#title {
+    margin-top: 5%;
+    font-size: 3.5rem;
+    /*-webkit-text-shadow: 1px 1px 0px #999, 2px 2px 1px #777, 3px 3px 1px #777;
+    text-shadow: 1px 1px 0px #999, 2px 2px 1px #777, 3px 3px 1px #777;
+    font-style: italic; */
+    color: #555;
+    letter-spacing: 5px;
+}
+
+#portal_logo {
+    position: absolute;
+    left: 50%;
+    width: 550px;
+    height: 187px;
+    margin-left: -275px; /* Half the width */
+}
+
+#loading_bar {
+    position: absolute;
+    bottom: 40px;
+    left: 10%;
+    padding: 4px;
+    border-radius: 5px;
+    width: 80%;
+    height: 20px;
+    border: 1px solid #39bbf9;
+    -webkit-box-shadow: inset 0px 0px 5px #39bbf9;
+    box-shadow: inset 0px 0px 5px #39bbf9;
+    -moz-transition: opacity linear 0.4s;
+    -o-transition: opacity linear 0.4s;
+    -webkit-transition: opacity linear 0.4s;
+    transition: opacity linear 0.4s;
+}
+
+#bar {
+    display: block;
+    background: #ff9721; /* Old browsers */
+    background: -moz-linear-gradient(left, #ff9721 0%, #39bbf9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ff9721), color-stop(100%,#39bbf9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #ff9721 0%,#39bbf9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #ff9721 0%,#39bbf9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #ff9721 0%,#39bbf9 100%); /* IE10+ */
+    background: linear-gradient(to right, #ff9721 0%,#39bbf9 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9721', endColorstr='#39bbf9',GradientType=1 ); /* IE6-9 */
+    height: 20px;
+    width: 5%;
+    -moz-transition: width ease-in-out 0.5s;
+    -o-transition: width ease-in-out 0.5s;
+    -webkit-transition: width ease-in-out 0.5s;
+    transition: width ease-in-out 0.5s;
+}
+
+#wrapper {
+    width: 100%;
+    min-height: 100% !important;
+    -moz-perspective: 1400px;
+    -ms-perspective: 1400px;
+    -webkit-perspective: 1400px;
+    perspective: 1400px;
+    -moz-perspective-origin: 50% 50%;
+    -ms-perspective-origin: 50% 50%;
+    -webkit-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.slide {
+    padding-bottom: 5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.slideIn {
+    -moz-transform: translate3d(0, 0%, 0px) rotateX(0deg);
+    -ms-transform: translate3d(0, 0%, 0px) rotateX(0deg);
+    -o-transform: translate3d(0, 0%, 0px) rotateX(0deg);
+    -webkit-transform: translate3d(0, 0%, 0px) rotateX(0deg);
+    transform: translate3d(0, 0%, 0px) rotateX(0deg);
+    opacity: 1;
+}
+
+.slideOut {
+    -moz-transform: translate3d(0, 50%, -500px) rotateX(-90deg);
+    -ms-transform: translate3d(0, 50%, -500px) rotateX(-90deg);
+    -o-transform: translate3d(0, 50%, -500px) rotateX(-90deg);
+    -webkit-transform: translate3d(0, 50%, -500px) rotateX(-90deg);
+    transform: translate3d(0, 50%, -500px) rotateX(-90deg);
+    opacity: 0;
+}
+
+.slideOff {
+    -moz-transform: translate3d(0,-50%,-500px) rotateX(90deg);
+    -ms-transform: translate3d(0,-50%,-500px) rotateX(90deg);
+    -o-transform: translate3d(0,-50%,-500px) rotateX(90deg);
+    -webkit-transform: translate3d(0,-50%,-500px) rotateX(90deg);
+    transform: translate3d(0,-50%,-500px) rotateX(90deg);
+    opacity: 0;
+}
+
+
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+li {
+    margin-left: 1em;
+    padding: 0.2em;
+}
+
+/*--------------- SLIDES ---------------*/
+
+#sb-player, #sb-body, #sb-body-inner, #sb-wrapper {
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clickable {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    border-width: 7px;
+    border-color: rgba(0,0,0,0);
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+    .clickable:hover {
+        border-bottom: 1px solid white;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        -webkit-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+    }
+
+.slide a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+@media (min-width: 1024px) {
+    p, li {
+        font-size: 1.4rem;
+    }
+
+    .slide {
+        margin: 0 10%;
+        width: 80%;
+    }
+}
+
+@media (min-width: 1300px) {
+    p, li {
+        font-size: 1.7rem;
+    }
+
+    .slide {
+        margin: 0 15%;
+        width: 70%;
+    }
+}
