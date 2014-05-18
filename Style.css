@@ -236,6 +236,8 @@ span {
     bottom: 70px;
     text-align: center;
     width: 100%;
+    font-size: 1.3rem;
+    z-index: 0;
 }
 
 
@@ -281,6 +283,7 @@ span {
     background-color: #fff;
     border-top: 3px solid #ff9721;
     border-bottom: 3px solid #39bbf9;
+    z-index: 100;
 }
 
 #riddles {
@@ -346,6 +349,7 @@ span {
     background-color: #000;
     border-top: 3px solid #ff9721;
     border-bottom: 3px solid #39bbf9;
+    z-index: 100;
 }
 
 .img1 {
@@ -358,7 +362,7 @@ span {
     background-image: url(img/testChamber2.png);
 }
 .img4 {
-    background-image: url(img/testChamber1.png);
+    background-image: url(img/portalGun.png);
 }
 .img5 {
     background-image: url(img/testChamber1.png);
