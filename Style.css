@@ -278,6 +278,13 @@ span {
 
 }
 
+.exampleImg {
+    border-top: 3px solid #ff9721;
+    border-bottom: 3px solid #39bbf9;
+    border-radius: 10px;
+    box-shadow: #777 3px 6px 8px;
+}
+
 #sb-player, #sb-body, #sb-body-inner, #sb-wrapper {
     overflow: hidden;
 }
@@ -314,9 +321,16 @@ span {
     cursor: pointer;
 }
 
+#cake {
+    position: absolute;
+    left: 50%;
+    width: 369px;
+    margin-left: -185px; /* Half the width */
+}
 
 
-@media (max-width: 1024px) {
+
+@media (min-width: 800px) {
     h1 {
         font-size: 2.5rem;
     }
@@ -334,7 +348,7 @@ span {
     }
 }
 
-@media (min-width: 1030px) {
+@media (min-width: 1280px) {
     p, li {
         font-size: 1.7rem;
     }
