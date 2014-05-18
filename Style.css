@@ -27,7 +27,7 @@ body {
 
 h1 {
     font-family: portal, sans-serif;
-    font-size: 3.2rem;
+    font-size: 3rem;
     /*-webkit-text-shadow: 1px 1px 0px #999, 2px 2px 1px #777, 3px 3px 1px #777;
     text-shadow: 1px 1px 0px #999, 2px 2px 1px #777, 3px 3px 1px #777; */
     color: #444;
@@ -39,9 +39,9 @@ h1 {
 
 h2 {
     text-align: center;
-    font-size: 2.2rem;
-    padding: 0.5em;
-    padding-left: 0em;
+    font-size: 2rem;
+    padding: 0.3em;
+    padding-left: 0;
     font-weight: 700;
     letter-spacing: 2px;
     font-variant: small-caps;
@@ -49,6 +49,7 @@ h2 {
 
 h3 {
     text-align: center;
+    font-size: 1.7rem;
 }
 
 
@@ -180,6 +181,7 @@ h3 {
     transition: all 0.7s ease-in-out;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    height: 85%;
 }
 
 .slideIn {
@@ -224,6 +226,17 @@ li {
 }
 
 /*--------------- SLIDES ---------------*/
+
+span {
+
+}
+
+.quelle {
+    position: absolute;
+    bottom: 70px;
+    text-align: center;
+    width: 100%;
+}
 
 
 .typeList li a {
@@ -323,7 +336,7 @@ li {
 
 @media (min-width: 1030px) {
     p, li {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .slide {
