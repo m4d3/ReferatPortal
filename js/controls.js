@@ -2,6 +2,8 @@
     var slides = document.getElementsByClassName("slide");
     var slideNum = 0;
 
+    Shadowbox.init();
+
     var nextSlide = function () {
         if (slideNum < slides.length - 1) {
             slides[slideNum].setAttribute("class", "slide slideOut");

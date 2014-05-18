@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="Style.css" />
 </head>
 <body>
-    <div id="wrapper">
-
+    <div id="patternLeft"></div>
+    <div id="patternRight"></div>
+    <div id="wrapper">        
         <div class="slide">
             <h1 id="title">PUZZLE PATTERNS</h1>
             <h2 style="margin: 0;">Einführung von Spielern in Puzzle Mechaniken bei Spielen am Beispiel</h2>
@@ -27,39 +28,55 @@
             <p style="text-align: center;">Pascal Müller * Benjamin Assig * Matthias Ewald</p>
         </div>
         <div class="slide slideOff">
-            <br /><br />
-            <h2>A toy, problem, or other contrivance designed to amuse by presenting difficulties to be solved by ingenuity or patient effort.</h2>
-            <h2>"A puzzle is a game with a dominant strategy." <i style="font-family: portal; font-size: 16pt"><br />Jesse Schell</i></h2>
-            <h2>Ein Puzzle besteht aus einer mentalen Herausvorderung, mit mindestens einer korrekten Lösung, die der Spieler herausfinden muss.</h2>
+            <h1>DEFINITION PUZZLE</h1>
+            <h2>"A toy, problem, or other contrivance designed to amuse by presenting difficulties to be solved by ingenuity or patient effort."</h2>
+            <h2>"A puzzle is a game with a dominant strategy."</h2>
+            <h2>
+                Ein Puzzle besteht aus einer mentalen Herausvorderung,
+                mit mindestens einer korrekten Lösung,
+                die der Spieler herausfinden muss.
+            </h2>
         </div>
         <div class="slide slideOff">
-            <h1 style="padding-bottom: 0">Puzzle Typen nach Brathwaite / Schreiber</h1>
-            <ul>
-                <li>Riddles</li>
-                <li>Lateral thinking</li>
-                <li>Spatial reasoning</li>
-                <li>PATTERN RECOGNITION</li>
-                <li>LOGIC</li>
-                <li>EXPLORATION</li>
-                <li>ITEM USE</li>
+            <h1 style="padding-bottom: 0">PUZZLE TYPEN</h1>
+            <ul class="typeList">
+                <li>
+                    <a>Riddles</a>
+                    <div id="riddles"></div>
+                </li>
+                <li>
+                    <a>Lateral thinking</a>
+                </li>
+                <li>
+                    <a>Spatial reasoning</a>
+                </li>
+                <li>Pattern recognition</li>
+                <li>Logic</li>
+                <li>Exploration</li>
+                <li>Item use</li>
             </ul>
+            <h2>Welche Typen kommen in Portal vor?</h2>
         </div>
         <div class="slide slideOff">
-            <h1>Portal</h1>
+            <br/>
+            <img src="img/Portal_logo.jpg" width="400" id="portal_logo2">
+            <br/><br/><br/><br /><br /><br /><br/>
             <ul>
                 <li>Ursprünglich Studentenprojekt "Narbacular Drop" - übernommen von Valve</li>
                 <li>Releasedate: Oktober 2007</li>
                 <li>First Person Spiel in der Source Engine unterstützt durch Havoc Physics</li>
                 <li>Spielziel: Erreichen des Ausgangs</li>
                 <li>
-                    Erreicht wird dies durch die Nutzung der Portalgun (Schießen von Ein- und Ausgangsportal)<br />
+                    Erreicht wird dies durch die Nutzung der Portalgun: <br />
+                    Schießen von Ein- und Ausgangsportal<br />
                     sowie Schalter, Kisten, Emitter, Energiekugeln, Beschleunigung
                 </li>
                 <li>Unterstützt wird dies durch die Physik</li>
             </ul>
         </div>
         <div class="slide slideOff">
-            <h1>Introduction Video</h1>
+            <h1>TEASER VIDEO</h1>
+            <video src="video/Portal_Teaser.mp4"></video>
         </div>
         <div class="slide slideOff">
             <h1>Verschiedene Lernprozesse im Spiel</h1>
@@ -196,6 +213,7 @@
     </div>
 
     <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/shadowbox/shadowbox.js"></script>
     <script src="js/controls.js"></script>
 </body>
 </html>

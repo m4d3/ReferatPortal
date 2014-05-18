@@ -36,9 +36,10 @@ h1 {
     /*-webkit-text-shadow: 1px 1px 0px #999, 2px 2px 1px #777, 3px 3px 1px #777;
     text-shadow: 1px 1px 0px #999, 2px 2px 1px #777, 3px 3px 1px #777; */
     color: #444;
-    padding: 1em 0em;
+    padding: 0.5em 0;
     width: 100%;
     text-align: center;
+    letter-spacing: 5px;
 }
 
 h2 {
@@ -95,6 +96,13 @@ h3 {
     margin-left: -275px; /* Half the width */
 }
 
+#portal_logo2 {
+    position: absolute;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px; /* Half the width */
+}
+
 #loading_bar {
     position: absolute;
     bottom: 40px;
@@ -146,6 +154,26 @@ h3 {
     overflow-x: hidden;
 }
 
+#patternLeft {
+    background-image: url("img/patternLeft.jpg");
+    width: 300px;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#patternRight {
+    background-image: url("img/patternRight.jpg");
+    width: 300px;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
 .slide {
     padding-bottom: 5em;
     position: absolute;
@@ -160,11 +188,11 @@ h3 {
 }
 
 .slideIn {
-    -moz-transform: translate3d(0, 0%, 0px) rotateX(0deg);
-    -ms-transform: translate3d(0, 0%, 0px) rotateX(0deg);
-    -o-transform: translate3d(0, 0%, 0px) rotateX(0deg);
-    -webkit-transform: translate3d(0, 0%, 0px) rotateX(0deg);
-    transform: translate3d(0, 0%, 0px) rotateX(0deg);
+    -moz-transform: translate3d(0, 0, 0) rotateX(0);
+    -ms-transform: translate3d(0, 0, 0) rotateX(0);
+    -o-transform: translate3d(0, 0, 0) rotateX(0);
+    -webkit-transform: translate3d(0, 0, 0) rotateX(0);
+    transform: translate3d(0, 0, 0) rotateX(0);
     opacity: 1;
 }
 
@@ -234,14 +262,33 @@ li {
     }
 
 .slide a {
-    color: #FFF;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.typeList li a {
+    border-bottom: 10px solid rgba(0,0,0,0);
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.typeList li a:hover {
+    border-bottom: 1px solid #555;
 }
 
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
     p, li {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .slide {
@@ -250,9 +297,9 @@ li {
     }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1030px) {
     p, li {
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
 
     .slide {
