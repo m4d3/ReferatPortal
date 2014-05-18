@@ -23,11 +23,6 @@ body {
     width: 100%;
     height: 100%;
     background-color: #ffffff;
-    background-image: url(img/bg3.jpg);
-    -moz-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
 }
 
 h1 {
@@ -230,6 +225,46 @@ li {
 
 /*--------------- SLIDES ---------------*/
 
+
+.typeList li a {
+    border-bottom: 10px solid rgba(0,0,0,0);
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.typeList li a:hover {
+    border-bottom: 1px solid #555;
+}
+
+.img_big {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+}
+
+.typeList li a:hover > .img_big {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    display: block;
+    opacity: 1;
+    -moz-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+}
+
+#riddles {
+
+}
+
 #sb-player, #sb-body, #sb-body-inner, #sb-wrapper {
     overflow: hidden;
 }
@@ -266,17 +301,6 @@ li {
     cursor: pointer;
 }
 
-.typeList li a {
-    border-bottom: 10px solid rgba(0,0,0,0);
-    -moz-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    -webkit-transition: all ease 0.3s;
-    transition: all ease 0.3s;
-}
-
-.typeList li a:hover {
-    border-bottom: 1px solid #555;
-}
 
 
 @media (max-width: 1024px) {
