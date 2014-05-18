@@ -182,6 +182,7 @@ h3 {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     height: 85%;
+    margin-bottom: 5%;
 }
 
 .slideIn {
@@ -272,10 +273,43 @@ span {
     -o-transition: all ease-in-out 0.5s;
     -webkit-transition: all ease-in-out 0.5s;
     transition: all ease-in-out 0.5s;
+    background-position: center;
+    background-repeat: no-repeat;
+    -moz-background-size: contain;
+    background-size: contain;
+    box-shadow: #777 4px 8px 8px;
+    border-radius: 10px;
+    background-color: #fff;
+    border-top: 3px solid #ff9721;
+    border-bottom: 3px solid #39bbf9;
 }
 
 #riddles {
 
+}
+
+#lateral {
+    background-image: url(img/lateral.jpg);
+}
+
+#spatial {
+    background-image: url(img/spatial.png);
+}
+
+#pattern {
+    background-image: url(img/PatternRecognition.png);
+}
+
+#logic {
+    background-image: url(img/logic-puzzle.png);
+}
+
+#exploration {
+    background-image: url(img/explorerPuzzle.png);
+}
+
+#item {
+    background-image: url(img/MonkeyIsland2.jpg);
 }
 
 .exampleImg {
@@ -283,6 +317,71 @@ span {
     border-bottom: 3px solid #39bbf9;
     border-radius: 10px;
     box-shadow: #777 3px 6px 8px;
+    width: 40%;
+    height: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -moz-background-size: contain;
+    background-size: contain;
+    background-color: #000;
+}
+
+.exampleImg:hover > .img_big {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    display: block;
+    opacity: 1;
+    -moz-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+    background-position: center;
+    background-repeat: no-repeat;
+    -moz-background-size: contain;
+    background-size: contain;
+    box-shadow: #777 4px 8px 8px;
+    border-radius: 10px;
+    background-color: #000;
+    border-top: 3px solid #ff9721;
+    border-bottom: 3px solid #39bbf9;
+}
+
+.img1 {
+    background-image: url(img/portal-orange-chell.jpg);
+}
+.img2 {
+    background-image: url(img/testChamber1.png);
+}
+.img3 {
+    background-image: url(img/testChamber2.png);
+}
+.img4 {
+    background-image: url(img/testChamber1.png);
+}
+.img5 {
+    background-image: url(img/testChamber1.png);
+}
+.img6 {
+    background-image: url(img/10b.gif);
+}
+
+.leftList {
+    float: left;
+    width: 60%;
+}
+
+#chell {
+    width: 40%;
+    height: 40%;
+    float: left;
+    background-image: url(img/fanart_portal113.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
 }
 
 #sb-player, #sb-body, #sb-body-inner, #sb-wrapper {
